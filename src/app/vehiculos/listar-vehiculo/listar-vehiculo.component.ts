@@ -10,7 +10,7 @@ import { Vehiculo } from '../vehiculo.model';
 export class ListarVehiculoComponent implements OnInit {
   vehiculos: Vehiculo[] = [];
   vehiculosPorMarca: { [marca: string]: number } = {};
-  selectedVehicle: Vehiculo | null = null; //Make selectedVehicle nullable
+  selectedVehicle: Vehiculo | null = null; 
 
 
   constructor(private vehiculosService: VehiculosService) {}
@@ -23,8 +23,6 @@ export class ListarVehiculoComponent implements OnInit {
       },
       error: (error) => {
         console.error('Error fetching vehicles:', error);
-        // Handle the error appropriately, e.g., display an error message to the user.
-        // You might want to set a flag to indicate an error occurred.
       }
     });
   }
@@ -38,7 +36,6 @@ export class ListarVehiculoComponent implements OnInit {
 
   selectVehicle(event: any) {
     const target = event.target;
-    // Encuentra el elemento <tr> que contiene el objetivo
     const row = target.closest('tr');
     if (row) {
       const index = Array.from(row.parentElement!.children).indexOf(row);
@@ -47,7 +44,7 @@ export class ListarVehiculoComponent implements OnInit {
   }
 
   handleImageError(event: any): void {
-    event.target.src = '/assets/images/placeholder.jpg'; // Or any default image path
+    event.target.src = '/assets/images/placeholder.jpg'; 
     console.error('Error loading image:', event.target.src);
   }
 }

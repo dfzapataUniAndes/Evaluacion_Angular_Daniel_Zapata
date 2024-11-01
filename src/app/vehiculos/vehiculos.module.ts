@@ -4,13 +4,13 @@ import { ListarVehiculoComponent } from './listar-vehiculo/listar-vehiculo.compo
 
 @NgModule({
   declarations: [
-    ListarVehiculoComponent // Declara el componente aquí
+    ListarVehiculoComponent 
   ],
   imports: [
     CommonModule
   ],
   exports: [
-    ListarVehiculoComponent // Exporta el componente para usarlo en otros módulos
+    ListarVehiculoComponent 
   ]
 })
 export class VehiculosModule { }
