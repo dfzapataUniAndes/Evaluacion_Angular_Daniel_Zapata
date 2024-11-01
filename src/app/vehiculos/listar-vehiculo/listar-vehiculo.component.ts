@@ -1,4 +1,3 @@
-// src/app/vehiculos/listar-vehiculo/listar-vehiculo.component.ts
 import { Component, OnInit } from '@angular/core';
 import { VehiculosService } from '../vehiculos.service';
 import { Vehiculo } from '../vehiculo.model';
