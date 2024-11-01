@@ -1,1 +1,24 @@
-<p>listar-vehiculo works!</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Marca</th>
+            <th>Línea</th>
+            <th>Referencia</th>
+            <th>Modelo</th>
+            <th>Kilometraje</th>
+            <th>Color</th>
+            <th>Imagen</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let vehiculo of vehiculos">
+            <td>{{ vehiculo.marca }}</td>
+            <td>{{ vehiculo.linea }}</td>
+            <td>{{ vehiculo.referencia }}</td>
+            <td>{{ vehiculo.modelo }}</td>
+            <td>{{ vehiculo.kilometraje }}</td>
+            <td>{{ vehiculo.color }}</td>
+            <td><img [src]="vehiculo.imagen" alt="{{ vehiculo.marca }} {{ vehiculo.linea }}" style="width: 100px; height: auto;"></td>
+        </tr>
+    </tbody>
+</table>
