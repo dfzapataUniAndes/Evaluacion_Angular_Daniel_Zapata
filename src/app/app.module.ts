@@ -3,7 +3,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { VehiculosModule } from './vehiculos/vehiculos.module'; // Importa el módulo de vehículos
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
-import { HttpClientModule } from '@angular/common/http'; // Importa HttpClientModule
+import { HttpClientModule } from '@angular/common/http';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap'; // Importa HttpClientModule
 
 
 
@@ -16,7 +17,8 @@ import { HttpClientModule } from '@angular/common/http'; // Importa HttpClientMo
   imports: [
     BrowserModule,
     HttpClientModule,
-    VehiculosModule // Añade el módulo aquí
+    VehiculosModule,
+    NgbModule // Añade el módulo aquí
   ],
   providers: [],
   bootstrap: [AppComponent]

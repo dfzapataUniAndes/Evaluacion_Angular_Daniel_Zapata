@@ -1,0 +1,38 @@
+/* listar-vehiculo.component.css */
+
+.jumbotron {
+  margin-bottom: 2rem; /* Espacio entre el jumbotron y el resto del contenido */
+}
+
+.table {
+  width: 100%; /* Asegurar que la tabla ocupe todo el ancho disponible */
+  table-layout: fixed; /* Distribuye el espacio entre las columnas uniformemente */
+}
+
+.table th,
+.table td {
+  text-align: center; /* Centra el texto en las celdas */
+}
+
+.table-bordered {
+  border: 1px solid #dee2e6; /* Borde de la tabla */
+}
+
+.table-bordered th,
+.table-bordered td {
+    border: 1px solid #dee2e6; /* Borde de las celdas */
+    padding: 0.75rem; /* Espacio interno de las celdas */
+    vertical-align: middle; /* Alinea verticalmente al centro */
+
+}
+
+
+/* Estilos para la imagen del vehículo en la sección de detalles */
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+.card {
+  margin-top: 1rem; /* Espacio entre la tabla y la card */
+}
